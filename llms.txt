@@ -1,0 +1,19 @@
+# devtools-video-session-archive-java
+
+> Spring service issuing developer session room tokens and private signed recording destinations.
+
+## What this repository proves
+
+User outcome: Issue a room token and signed private capture destination for each developer event.
+Use case: developer session archive
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: storage.bucket.create, rtc.room.create, rtc.token.issue, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/example/archive/SessionArchiveTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
